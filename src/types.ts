@@ -2,7 +2,8 @@ export interface Card {
 	power: number;
 	cost: number;
 	name: string;
-	description?: string;
+	flavour?: string;
+	ability: string;
 	releaseDate?: Date;
 	cardDefId?: string;
 	shortName?: string;
