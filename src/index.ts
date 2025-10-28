@@ -1,7 +1,7 @@
-export { extractDeckcode, parseDeckcode } from './core/parsers';
-export { generateDeckcode, generateLongDeckcode } from './core/generators';
+export * from './core/parsers';
+export * from './core/generators';
 
 // types
-export { default as Deck } from './models/deck.type';
-export { default as Card } from './models/card.type';
-export { default as Deckcode } from './models/deckcode.type';
+export type { default as Deck } from './models/deck.type';
+export type { default as Card } from './models/card.type';
+export type { default as Deckcode } from './models/deckcode.type';
