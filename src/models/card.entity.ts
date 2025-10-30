@@ -1,28 +1,29 @@
-import { Entity, Column, PrimaryColumn } from "typeorm";
+import { Entity, Column, PrimaryColumn } from 'typeorm';
+import 'reflect-metadata';
 
-@Entity({name: "cards"})
+@Entity({ name: 'cards' })
 export class CardEntity {
-	@PrimaryColumn()
-	cardDefId!: string;
+  @PrimaryColumn()
+  cardDefId!: string;
 
-	@Column()
-	name!: string;
+  @Column()
+  name!: string;
 
-	@Column()
-	power!: string;
+  @Column()
+  power!: string;
 
-	@Column()
-	cost!: string;
+  @Column()
+  cost!: string;
 
-	@Column()
-	obtainable!: boolean;
+  @Column()
+  obtainable!: boolean;
 
-	@Column()
-	description!: string;
+  @Column()
+  description!: string;
 
-	@Column()
-	releaseDate!: Date;
+  @Column()
+  releaseDate!: Date;
 
-	@Column()
-	shortName!: string;
+  @Column()
+  shortName!: string;
 }

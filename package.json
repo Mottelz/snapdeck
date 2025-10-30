@@ -1,12 +1,12 @@
 {
   "name": "snapdeck",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A package to validate Marvel Snap Decks.",
   "author": "Mottelz",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mottelz/snapdeck.git"
+    "url": "git+https://github.com/Mottelz/snapdeck.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -21,7 +21,8 @@
     }
   },
   "scripts": {
-    "build": "tsup src/index.ts --dts --format esm,cjs",
+    "build": "tsup src/index.ts --dts --format esm,cjs && npm run copy-db",
+    "copy-db": "node scripts/copyAssets.mjs",
     "dev": "tsup src/index.ts --watch --dts --format esm,cjs",
     "clean": "rm -rf dist",
     "lint": "eslint src/**/*.ts",
@@ -31,6 +32,7 @@
     "prepare": "npm run build"
   },
   "devDependencies": {
+    "@swc/core": "^1.14.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",

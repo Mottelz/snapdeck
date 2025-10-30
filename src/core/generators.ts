@@ -32,7 +32,7 @@ export function generateDisplayString(cards: Card[]): string {
     displayString += `# (${card.cost}) ${card.name}\n`;
   });
   displayString += '#\n';
-  displayString += `$${generateDeckcodeString(cards)}\n`;
+  displayString += `${generateDeckcodeString(cards)}\n`;
   displayString += '# Generated with SnapDeck';
   return displayString;
 }
