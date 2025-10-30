@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryColumn,  } from "typeorm";
+import { Entity, Column, PrimaryColumn } from "typeorm";
 
 @Entity({name: "cards"})
 export class CardEntity {
