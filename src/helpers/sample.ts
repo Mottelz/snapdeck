@@ -146,7 +146,7 @@ const sampleDeck = {
     deckcode:
       '{"Name":"Discard","Cards":[{"CardDefId":"Apocalypse"},{"CardDefId":"Blade"},{"CardDefId":"ColleenWing"},{"CardDefId":"CorvusGlaive"},{"CardDefId":"Dracula"},{"CardDefId":"Gambit"},{"CardDefId":"Khonshu"},{"CardDefId":"LadySif"},{"CardDefId":"Modok"},{"CardDefId":"Morbius"},{"CardDefId":"ProximaMidnight"},{"CardDefId":"Scorn"}]}',
   },
-  displayString: `# (1) Blade\n# (1) Scorn\n# (2) Colleen Wing\n# (2) Morbius\n# (3) Corvus Glaive\n# (3) Gambit\n# (3) Lady Sif\n# (4) Dracula\n# (4) Proxima Midnight\n# (5) M.O.D.O.K.\n# (6) Apocalypse\n# (6) Khonshu\n#\n$QmxkNSxTY3JuNSxDbGxuV25nQixNcmJzNyxDcnZzR2x2QyxHbWJ0NixMZFNmNyxEcmNsNyxQcnhtTWRuZ2h0RixNZGs1LEFwY2xwc0EsS2huc2g3\n# Generated with SnapDeck`,
+  displayString: `# (1) Blade\n# (1) Scorn\n# (2) Colleen Wing\n# (2) Morbius\n# (3) Corvus Glaive\n# (3) Gambit\n# (3) Lady Sif\n# (4) Dracula\n# (4) Proxima Midnight\n# (5) M.O.D.O.K.\n# (6) Apocalypse\n# (6) Khonshu\n#\nQmxkNSxTY3JuNSxDbGxuV25nQixNcmJzNyxDcnZzR2x2QyxHbWJ0NixMZFNmNyxEcmNsNyxQcnhtTWRuZ2h0RixNZGs1LEFwY2xwc0EsS2huc2g3\n# Generated with SnapDeck`,
 };
 
 export default sampleDeck;
