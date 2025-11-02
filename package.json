@@ -30,7 +30,7 @@
     "format": "prettier --write src/**/*.ts",
     "test": "jest",
     "prepare": "npm run build",
-    "release": "commit-and-tag-version"
+    "release": "commit-and-tag-version && git push --follow-tags origin main && npm publish"
   },
   "devDependencies": {
     "@swc/core": "^1.14.0",
