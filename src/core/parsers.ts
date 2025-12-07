@@ -5,6 +5,11 @@ import { CardEntity } from '../models/card.entity';
 import { Buffer } from 'node:buffer';
 import getDataSource from '../helpers/data-source';
 
+/**
+ * Extracts a deckcode from input string by decoding base64 content
+ * @param input - The input string containing base64 encoded deckcode
+ * @returns Deckcode object with type and deckcode, or null if invalid
+ */
 export function extractDeckcode(input: string): Deckcode | null {
   const rawcode64 = input
     .split('\n')
@@ -25,6 +30,11 @@ export function extractDeckcode(input: string): Deckcode | null {
   return null;
 }
 
+/**
+ * Parses a deckcode into a complete Deck object with cards
+ * @param deckcode - The deckcode object to parse
+ * @returns Promise<Deck | null> - Complete deck with 12 cards, or null if invalid
+ */
 export async function parseDeckcode(deckcode: Deckcode): Promise<Deck | null> {
   const deckToReturn: Deck | null = {
     cards: [],
@@ -39,6 +49,11 @@ export async function parseDeckcode(deckcode: Deckcode): Promise<Deck | null> {
   return deckToReturn.cards.length === 12 ? deckToReturn : null;
 }
 
+/**
+ * Parses a long format deckcode (JSON) into array of cards
+ * @param deckcode - The JSON string deckcode to parse
+ * @returns Promise<Card[]> - Array of cards from the deckcode
+ */
 async function parseLongDeckcode(deckcode: string): Promise<Card[]> {
   const dataSource = await getDataSource();
   const parsed: { Name: string; Cards: Array<{ CardDefId: string }> } = JSON.parse(deckcode);
@@ -51,6 +66,11 @@ async function parseLongDeckcode(deckcode: string): Promise<Card[]> {
   return cards;
 }
 
+/**
+ * Parses a short format deckcode (comma-separated shortNames) into array of cards
+ * @param deckcode - The comma-separated shortNames string to parse
+ * @returns Promise<Card[]> - Array of cards from the deckcode
+ */
 async function parseShortDeckcode(deckcode: string): Promise<Card[]> {
   const dataSource = await getDataSource();
   const shortNames = deckcode.split(',');
