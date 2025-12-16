@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.2.0](https://github.com/Mottelz/snapdeck/compare/v2.1.0...v2.2.0) (2025-12-16)
+
+
+### Features
+
+* added interface functions ([d922260](https://github.com/Mottelz/snapdeck/commit/d9222601210ad3c75687307d89ec1be42623cf40))
+
 ## [2.1.0](https://github.com/Mottelz/snapdeck/compare/v1.1.3...v2.1.0) (2025-12-07)
 
 
