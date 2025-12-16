@@ -5,16 +5,25 @@ import path from 'node:path';
 import fs from 'node:fs';
 
 function resolveDir(): string {
-  // eslint-disable-next-line no-undef
-  const srcPath = path.resolve(__dirname, '../models/cards.db');
-  // eslint-disable-next-line no-undef
-  const distPath = path.resolve(__dirname, 'cards.db');
+  // Try multiple possible database locations
+  const possiblePaths = [
+    // During development (src structure)
+    path.join(process.cwd(), 'src', 'models', 'cards.db'),
+    // After build (dist structure)
+    path.join(process.cwd(), 'dist', 'models', 'cards.db'),
+    path.join(process.cwd(), 'dist', 'helpers', 'cards.db'),
+    // Node modules installation
+    path.join(__dirname || process.cwd(), '..', 'models', 'cards.db'),
+    path.join(__dirname || process.cwd(), 'cards.db'),
+    // Fallback to current directory
+    path.join(process.cwd(), 'cards.db'),
+  ];
 
-  if (fs.existsSync(srcPath)) {
-    return srcPath;
-  }
-  if (fs.existsSync(distPath)) {
-    return distPath;
+  // Return the first path that exists
+  for (const dbPath of possiblePaths) {
+    if (fs.existsSync(dbPath)) {
+      return dbPath;
+    }
   }
 
   return '';
