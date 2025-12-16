@@ -28,23 +28,23 @@ describe('Deck Parsers', () => {
   });
 
   describe('parseDeckcode', () => {
-    it('should parse a long deckcode into a Deck object', async () => {
+    it('should parse a long deckcode into a Deck object', () => {
       // arrange
       const deckcode = sampleDeck.longCodeObject as Deckcode;
 
       // act
-      const result = await parseDeckcode(deckcode);
+      const result = parseDeckcode(deckcode);
 
       // assert
       expect(result?.deckcode).toEqual(sampleDeck.longCodeObject);
     });
 
-    it('should parse a short deckcode into a Deck object', async () => {
+    it('should parse a short deckcode into a Deck object', () => {
       // arrange
       const deckcode = sampleDeck.shortCodeObject as Deckcode;
 
       // act
-      const result = await parseDeckcode(deckcode);
+      const result = parseDeckcode(deckcode);
 
       // assert
       expect(result?.deckcode).toEqual(sampleDeck.shortCodeObject);

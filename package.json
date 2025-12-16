@@ -21,8 +21,8 @@
     }
   },
   "scripts": {
-    "build": "tsup src/index.ts --dts --format esm,cjs && npm run copy-db",
-    "copy-db": "node scripts/copyAssets.mjs",
+    "build": "tsup src/index.ts --dts --format esm,cjs && npm run copy-json",
+    "copy-json": "node scripts/copyAssets.mjs",
     "dev": "tsup src/index.ts --watch --dts --format esm,cjs",
     "clean": "rm -rf dist",
     "lint": "eslint src/**/*.ts",
@@ -51,10 +51,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "dependencies": {
-    "reflect-metadata": "^0.2.2",
-    "sqlite3": "^5.1.7",
-    "typeorm": "^0.3.27"
   }
 }

@@ -1,205 +1,80 @@
 import {
   getAllCards,
   getCardByIdentifier,
-  getCardByCardDefId,
-  getCardByShortName,
   getCardsByCardDefIds,
+  getCardByCardDefId,
   getCardsByShortNames,
+  getCardByShortName,
 } from './lookups';
-import getDataSource from '../helpers/data-source';
-import { CardEntity } from '../models/card.entity';
-import { DataSource } from 'typeorm';
-
-// Mock the data source
-jest.mock('../helpers/data-source');
-const mockGetDataSource = getDataSource as jest.MockedFunction<typeof getDataSource>;
-
-// Mock repository methods
-const mockFind = jest.fn();
-const mockFindOne = jest.fn();
-const mockRepository = {
-  find: mockFind,
-  findOne: mockFindOne,
-};
-
-// Mock data source
-const mockDataSource = {
-  getRepository: jest.fn().mockReturnValue(mockRepository),
-} as unknown as DataSource;
 
 describe('Card Lookups', () => {
-  beforeEach(() => {
-    jest.clearAllMocks();
-    mockGetDataSource.mockResolvedValue(mockDataSource);
-  });
-
-  const mockCardEntities: CardEntity[] = [
-    {
-      cardDefId: 'Apocalypse',
-      name: 'Apocalypse',
-      power: '8',
-      cost: '6',
-      obtainable: true,
-      description: 'When you discard this, put it back with +4 Power.',
-      releaseDate: new Date('0001-01-01T00:00:00.000Z'),
-      shortName: 'ApclpsA',
-    },
-    {
-      cardDefId: 'Blade',
-      name: 'Blade',
-      power: '3',
-      cost: '1',
-      obtainable: true,
-      description: 'On Reveal: Discard the rightmost card from your hand.',
-      releaseDate: new Date('0001-01-01T00:00:00.000Z'),
-      shortName: 'Bld5',
-    },
-    {
-      cardDefId: 'ColleenWing',
-      name: 'Colleen Wing',
-      power: '3',
-      cost: '2',
-      obtainable: true,
-      description: 'On Reveal: Discard the card that costs the least from your hand.',
-      releaseDate: new Date('0001-01-01T00:00:00.000Z'),
-      shortName: 'CllnWngB',
-    },
-  ];
-
   describe('getAllCards', () => {
-    it('should return all cards from the database', async () => {
-      // arrange
-      mockFind.mockResolvedValue(mockCardEntities);
-
+    it('should return all cards from the JSON data', () => {
       // act
-      const result = await getAllCards();
+      const result = getAllCards();
 
       // assert
-      expect(mockGetDataSource).toHaveBeenCalled();
-      expect(mockDataSource.getRepository).toHaveBeenCalledWith(CardEntity);
-      expect(mockFind).toHaveBeenCalled();
-      expect(result).toHaveLength(3);
-      expect(result[0]).toEqual({
-        cardDefId: 'Apocalypse',
-        name: 'Apocalypse',
-        power: '8',
-        cost: '6',
-        obtainable: true,
-        description: 'When you discard this, put it back with +4 Power.',
-        releaseDate: new Date('0001-01-01T00:00:00.000Z'),
-        shortName: 'ApclpsA',
-      });
-    });
+      expect(result).toBeDefined();
+      expect(Array.isArray(result)).toBe(true);
+      expect(result.length).toBeGreaterThan(0);
 
-    it('should return empty array when no cards exist', async () => {
-      // arrange
-      mockFind.mockResolvedValue([]);
-
-      // act
-      const result = await getAllCards();
-
-      // assert
-      expect(result).toEqual([]);
-      expect(result).toHaveLength(0);
+      // Check that cards have expected structure
+      const firstCard = result[0];
+      expect(firstCard).toHaveProperty('cardDefId');
+      expect(firstCard).toHaveProperty('name');
+      expect(firstCard).toHaveProperty('power');
+      expect(firstCard).toHaveProperty('cost');
+      expect(firstCard).toHaveProperty('obtainable');
+      expect(firstCard).toHaveProperty('description');
+      expect(firstCard).toHaveProperty('releaseDate');
+      expect(firstCard).toHaveProperty('shortName');
     });
   });
 
   describe('getCardByIdentifier', () => {
-    it('should find card by cardDefId', async () => {
-      // arrange
-      mockFindOne.mockResolvedValueOnce(mockCardEntities[0]);
-
+    it('should find card by cardDefId', () => {
       // act
-      const result = await getCardByIdentifier('Apocalypse');
+      const result = getCardByIdentifier('Apocalypse');
 
       // assert
-      expect(mockFindOne).toHaveBeenCalledWith({
-        where: { cardDefId: 'Apocalypse' },
-      });
-      expect(result).toEqual({
-        cardDefId: 'Apocalypse',
-        name: 'Apocalypse',
-        power: '8',
-        cost: '6',
-        obtainable: true,
-        description: 'When you discard this, put it back with +4 Power.',
-        releaseDate: new Date('0001-01-01T00:00:00.000Z'),
-        shortName: 'ApclpsA',
-      });
+      expect(result).toBeDefined();
+      expect(result?.cardDefId).toBe('Apocalypse');
+      expect(result?.name).toBe('Apocalypse');
     });
 
-    it('should find card by shortName when cardDefId fails', async () => {
-      // arrange
-      mockFindOne
-        .mockResolvedValueOnce(null) // First call (cardDefId) returns null
-        .mockResolvedValueOnce(mockCardEntities[0]); // Second call (shortName) returns card
-
+    it('should find card by shortName when cardDefId fails', () => {
       // act
-      const result = await getCardByIdentifier('ApclpsA');
+      const result = getCardByIdentifier('ApclpsA');
 
       // assert
-      expect(mockFindOne).toHaveBeenCalledTimes(2);
-      expect(mockFindOne).toHaveBeenNthCalledWith(1, {
-        where: { cardDefId: 'ApclpsA' },
-      });
-      expect(mockFindOne).toHaveBeenNthCalledWith(2, {
-        where: { shortName: 'ApclpsA' },
-      });
-      expect(result).toEqual({
-        cardDefId: 'Apocalypse',
-        name: 'Apocalypse',
-        power: '8',
-        cost: '6',
-        obtainable: true,
-        description: 'When you discard this, put it back with +4 Power.',
-        releaseDate: new Date('0001-01-01T00:00:00.000Z'),
-        shortName: 'ApclpsA',
-      });
+      expect(result).toBeDefined();
+      expect(result?.cardDefId).toBe('Apocalypse');
+      expect(result?.shortName).toBe('ApclpsA');
     });
 
-    it('should return null when card is not found by either identifier', async () => {
-      // arrange
-      mockFindOne.mockResolvedValue(null);
-
+    it('should return null when card is not found by either identifier', () => {
       // act
-      const result = await getCardByIdentifier('NonExistentCard');
+      const result = getCardByIdentifier('NonExistentCard');
 
       // assert
-      expect(mockFindOne).toHaveBeenCalledTimes(2);
       expect(result).toBeNull();
     });
   });
 
   describe('getCardByCardDefId', () => {
-    it('should find card by cardDefId', async () => {
-      // arrange
-      mockFindOne.mockResolvedValue(mockCardEntities[1]);
-
+    it('should find card by cardDefId', () => {
       // act
-      const result = await getCardByCardDefId('Blade');
+      const result = getCardByCardDefId('Blade');
 
       // assert
-      expect(mockFindOne).toHaveBeenCalledWith({
-        where: { cardDefId: 'Blade' },
-      });
-      expect(result).toEqual({
-        cardDefId: 'Blade',
-        name: 'Blade',
-        power: '3',
-        cost: '1',
-        obtainable: true,
-        description: 'On Reveal: Discard the rightmost card from your hand.',
-        releaseDate: new Date('0001-01-01T00:00:00.000Z'),
-        shortName: 'Bld5',
-      });
+      expect(result).toBeDefined();
+      expect(result?.cardDefId).toBe('Blade');
+      expect(result?.name).toBe('Blade');
     });
 
-    it('should return null when cardDefId is not found', async () => {
-      // arrange
-      mockFindOne.mockResolvedValue(null);
-
+    it('should return null when card is not found', () => {
       // act
-      const result = await getCardByCardDefId('NonExistentCard');
+      const result = getCardByCardDefId('NonExistentCard');
 
       // assert
       expect(result).toBeNull();
@@ -207,35 +82,19 @@ describe('Card Lookups', () => {
   });
 
   describe('getCardByShortName', () => {
-    it('should find card by shortName', async () => {
-      // arrange
-      mockFindOne.mockResolvedValue(mockCardEntities[2]);
-
+    it('should find card by shortName', () => {
       // act
-      const result = await getCardByShortName('CllnWngB');
+      const result = getCardByShortName('CllnWngB');
 
       // assert
-      expect(mockFindOne).toHaveBeenCalledWith({
-        where: { shortName: 'CllnWngB' },
-      });
-      expect(result).toEqual({
-        cardDefId: 'ColleenWing',
-        name: 'Colleen Wing',
-        power: '3',
-        cost: '2',
-        obtainable: true,
-        description: 'On Reveal: Discard the card that costs the least from your hand.',
-        releaseDate: new Date('0001-01-01T00:00:00.000Z'),
-        shortName: 'CllnWngB',
-      });
+      expect(result).toBeDefined();
+      expect(result?.shortName).toBe('CllnWngB');
+      expect(result?.cardDefId).toBe('ColleenWing');
     });
 
-    it('should return null when shortName is not found', async () => {
-      // arrange
-      mockFindOne.mockResolvedValue(null);
-
+    it('should return null when card is not found', () => {
       // act
-      const result = await getCardByShortName('NonExistentShortName');
+      const result = getCardByShortName('NonExistent');
 
       // assert
       expect(result).toBeNull();
@@ -243,144 +102,62 @@ describe('Card Lookups', () => {
   });
 
   describe('getCardsByCardDefIds', () => {
-    it('should find multiple cards by cardDefIds', async () => {
-      // arrange
-      const selectedCards = [mockCardEntities[0], mockCardEntities[1]];
-      mockFind.mockResolvedValue(selectedCards);
-
+    it('should find multiple cards by cardDefIds', () => {
       // act
-      const result = await getCardsByCardDefIds(['Apocalypse', 'Blade']);
+      const result = getCardsByCardDefIds(['Apocalypse', 'Blade']);
 
       // assert
-      expect(mockFind).toHaveBeenCalledWith({
-        where: [{ cardDefId: 'Apocalypse' }, { cardDefId: 'Blade' }],
-      });
+      expect(result).toBeDefined();
       expect(result).toHaveLength(2);
       expect(result[0].cardDefId).toBe('Apocalypse');
       expect(result[1].cardDefId).toBe('Blade');
     });
 
-    it('should return empty array when no cards are found', async () => {
-      // arrange
-      mockFind.mockResolvedValue([]);
-
+    it('should handle empty array input', () => {
       // act
-      const result = await getCardsByCardDefIds(['NonExistent1', 'NonExistent2']);
+      const result = getCardsByCardDefIds([]);
 
       // assert
       expect(result).toEqual([]);
-      expect(result).toHaveLength(0);
     });
 
-    it('should return partial results when some cards are found', async () => {
-      // arrange
-      mockFind.mockResolvedValue([mockCardEntities[0]]);
-
+    it('should handle non-existent cards', () => {
       // act
-      const result = await getCardsByCardDefIds(['Apocalypse', 'NonExistentCard']);
+      const result = getCardsByCardDefIds(['Apocalypse', 'NonExistent', 'Blade']);
 
       // assert
-      expect(result).toHaveLength(1);
-      expect(result[0].cardDefId).toBe('Apocalypse');
-    });
-
-    it('should handle empty array input', async () => {
-      // arrange
-      mockFind.mockResolvedValue([]);
-
-      // act
-      const result = await getCardsByCardDefIds([]);
-
-      // assert
-      expect(mockFind).toHaveBeenCalledWith({
-        where: [],
-      });
-      expect(result).toEqual([]);
+      expect(result).toHaveLength(2);
+      expect(result.map((c) => c.cardDefId)).toEqual(['Apocalypse', 'Blade']);
     });
   });
 
   describe('getCardsByShortNames', () => {
-    it('should find multiple cards by shortNames', async () => {
-      // arrange
-      const selectedCards = [mockCardEntities[0], mockCardEntities[2]];
-      mockFind.mockResolvedValue(selectedCards);
-
+    it('should find multiple cards by shortNames', () => {
       // act
-      const result = await getCardsByShortNames(['ApclpsA', 'CllnWngB']);
+      const result = getCardsByShortNames(['ApclpsA', 'CllnWngB']);
 
       // assert
-      expect(mockFind).toHaveBeenCalledWith({
-        where: [{ shortName: 'ApclpsA' }, { shortName: 'CllnWngB' }],
-      });
+      expect(result).toBeDefined();
       expect(result).toHaveLength(2);
       expect(result[0].shortName).toBe('ApclpsA');
       expect(result[1].shortName).toBe('CllnWngB');
     });
 
-    it('should return empty array when no cards are found', async () => {
-      // arrange
-      mockFind.mockResolvedValue([]);
-
+    it('should handle empty array input', () => {
       // act
-      const result = await getCardsByShortNames(['NonExistent1', 'NonExistent2']);
+      const result = getCardsByShortNames([]);
 
       // assert
       expect(result).toEqual([]);
-      expect(result).toHaveLength(0);
     });
 
-    it('should return partial results when some cards are found', async () => {
-      // arrange
-      mockFind.mockResolvedValue([mockCardEntities[1]]);
-
+    it('should handle non-existent cards', () => {
       // act
-      const result = await getCardsByShortNames(['Bld5', 'NonExistentShortName']);
+      const result = getCardsByShortNames(['ApclpsA', 'NonExistent', 'CllnWngB']);
 
       // assert
-      expect(result).toHaveLength(1);
-      expect(result[0].shortName).toBe('Bld5');
-    });
-
-    it('should handle empty array input', async () => {
-      // arrange
-      mockFind.mockResolvedValue([]);
-
-      // act
-      const result = await getCardsByShortNames([]);
-
-      // assert
-      expect(mockFind).toHaveBeenCalledWith({
-        where: [],
-      });
-      expect(result).toEqual([]);
-    });
-  });
-
-  describe('database integration', () => {
-    it('should handle database errors gracefully', async () => {
-      // arrange
-      mockFind.mockRejectedValue(new Error('Database connection failed'));
-
-      // act & assert
-      await expect(getAllCards()).rejects.toThrow('Database connection failed');
-    });
-
-    it('should ensure data source is called for each function', async () => {
-      // arrange
-      mockFind.mockResolvedValue([]);
-      mockFindOne.mockResolvedValue(null);
-
-      // act
-      await getAllCards();
-      await getCardByIdentifier('test');
-      await getCardByCardDefId('test');
-      await getCardByShortName('test');
-      await getCardsByCardDefIds(['test']);
-      await getCardsByShortNames(['test']);
-
-      // assert
-      expect(mockGetDataSource).toHaveBeenCalledTimes(6);
-      expect(mockDataSource.getRepository).toHaveBeenCalledTimes(6);
+      expect(result).toHaveLength(2);
+      expect(result.map((c) => c.shortName)).toEqual(['ApclpsA', 'CllnWngB']);
     });
   });
 });
