@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.3.0](https://github.com/Mottelz/snapdeck/compare/v2.2.3...v2.3.0) (2025-12-16)
+
+
+### Features
+
+* replaced sqlite db with json ([80df8e8](https://github.com/Mottelz/snapdeck/commit/80df8e8e44732852647198b5b83b1f780e382239))
+
 ## [2.2.3](https://github.com/Mottelz/snapdeck/compare/v2.2.2...v2.2.3) (2025-12-16)
 
 
