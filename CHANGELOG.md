@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.2.3](https://github.com/Mottelz/snapdeck/compare/v2.2.2...v2.2.3) (2025-12-16)
+
+
+### Bug Fixes
+
+* enabled ES module compatibility ([2116669](https://github.com/Mottelz/snapdeck/commit/21166696e45836c2a82ed80594122f15a4a9c5de))
+
 ## [2.2.2](https://github.com/Mottelz/snapdeck/compare/v2.2.1...v2.2.2) (2025-12-16)
 
 ## [2.2.1](https://github.com/Mottelz/snapdeck/compare/v2.2.0...v2.2.1) (2025-12-16)

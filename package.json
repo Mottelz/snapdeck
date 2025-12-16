@@ -1,6 +1,6 @@
 {
   "name": "snapdeck",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "A package to validate Marvel Snap Decks.",
   "author": "Mottelz",
   "license": "MIT",
