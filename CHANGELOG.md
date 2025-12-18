@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.4.0](https://github.com/Mottelz/snapdeck/compare/v2.3.0...v2.4.0) (2025-12-18)
+
+
+### Features
+
+* added function to convert a raw shortcode to a display string ([31d2041](https://github.com/Mottelz/snapdeck/commit/31d20416370f911b158e45a6cf9ff82685f294d5))
+
 ## [2.3.0](https://github.com/Mottelz/snapdeck/compare/v2.2.3...v2.3.0) (2025-12-16)
 
 
