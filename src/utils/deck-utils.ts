@@ -1,5 +1,5 @@
 import { extractDeckcode, parseDeckcode } from '../core/parsers';
-import { generateDeckcodeString } from '../core/generators';
+import { generateDeckcodeString, generateDisplayString } from '../core/generators';
 import Deck from '../models/deck.type';
 
 /**
@@ -44,6 +44,28 @@ export function getDeckCode(deck: Deck): string | null {
     return generateDeckcodeString(deck.cards);
   } catch {
     // Return null if generation fails for any reason
+    return null;
+  }
+}
+
+/**
+ * Converts a raw short code string to a human-readable display string
+ * @param rawShortCode - The raw base64 encoded short code string
+ * @returns Promise<string | null> - Formatted display string with card names, or null if invalid
+ */
+export async function rawShortCodeToDisplayString(rawShortCode: string): Promise<string | null> {
+  try {
+    // Parse the raw string to get the deck
+    const deck = await parseRawStringToDeck(rawShortCode);
+
+    if (!deck || !deck.cards || deck.cards.length !== 12) {
+      return null;
+    }
+
+    // Use the existing generateDisplayString function
+    return generateDisplayString(deck.cards);
+  } catch {
+    // Return null if parsing fails for any reason
     return null;
   }
 }
