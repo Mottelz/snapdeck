@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.4.7](https://github.com/Mottelz/snapdeck/compare/v2.4.6...v2.4.7) (2026-02-23)
+
 ## [2.4.6](https://github.com/Mottelz/snapdeck/compare/v2.4.5...v2.4.6) (2026-01-09)
 
 ## [2.4.5](https://github.com/Mottelz/snapdeck/compare/v2.4.4...v2.4.5) (2026-01-09)
