@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.5.0](https://github.com/Mottelz/snapdeck/compare/v2.4.10...v2.5.0) (2026-07-08)
+
+
+### Features
+
+* add generateSimplifiedDisplayString generator ([9cab71f](https://github.com/Mottelz/snapdeck/commit/9cab71fc1073acd995a072d7e18187866cd150f1))
+
 ## [2.4.10](https://github.com/Mottelz/snapdeck/compare/v2.4.9...v2.4.10) (2026-05-23)
 
 ## [2.4.9](https://github.com/Mottelz/snapdeck/compare/v2.4.8...v2.4.9) (2026-05-23)
