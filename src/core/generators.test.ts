@@ -2,6 +2,7 @@ import {
   generateDeckcodeString,
   generateDisplayString,
   generateLongDeckcodeString,
+  generateSimplifiedDisplayString,
 } from './generators';
 import Card from '../models/card.type';
 import sampleDeck from '../helpers/sample';
@@ -33,6 +34,31 @@ describe('Generators', () => {
 
       // assert
       expect(decode(result).Cards).toEqual(decode(sampleDeck.longCode.encrypted).Cards);
+    });
+  });
+
+  describe('generateSimplifiedDisplayString', () => {
+    it('should generate correct simplified display string from cards', () => {
+      // arrange
+      const cards: Card[] = sampleDeck.cards;
+
+      // act
+      const result = generateSimplifiedDisplayString(cards);
+
+      // assert
+      expect(result).toEqual(sampleDeck.simplifiedDisplayString);
+    });
+
+    it('should not mutate the original cards array', () => {
+      // arrange
+      const cards: Card[] = [...sampleDeck.cards].reverse();
+      const original = [...cards];
+
+      // act
+      generateSimplifiedDisplayString(cards);
+
+      // assert
+      expect(cards).toEqual(original);
     });
   });
 

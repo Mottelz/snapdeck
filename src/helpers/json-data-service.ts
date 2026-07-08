@@ -2,8 +2,8 @@ import Card from '../models/card.type';
 import cardsData from '../models/cards.json';
 
 interface RawCardData {
-  power: string;
-  cost: string;
+  power: string | number;
+  cost: string | number;
   name: string;
   description: string;
   releaseDate: string;
@@ -14,8 +14,8 @@ interface RawCardData {
 
 // Transform the JSON data to match Card interface
 const cards: Card[] = (cardsData as RawCardData[]).map((cardData) => ({
-  power: cardData.power,
-  cost: cardData.cost,
+  power: String(cardData.power),
+  cost: String(cardData.cost),
   name: cardData.name,
   description: cardData.description,
   releaseDate: new Date(cardData.releaseDate),

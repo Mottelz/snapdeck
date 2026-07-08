@@ -146,6 +146,7 @@ const sampleDeck = {
     deckcode:
       '{"Name":"Discard","Cards":[{"CardDefId":"Apocalypse"},{"CardDefId":"Blade"},{"CardDefId":"ColleenWing"},{"CardDefId":"CorvusGlaive"},{"CardDefId":"Dracula"},{"CardDefId":"Gambit"},{"CardDefId":"Khonshu"},{"CardDefId":"LadySif"},{"CardDefId":"Modok"},{"CardDefId":"Morbius"},{"CardDefId":"ProximaMidnight"},{"CardDefId":"Scorn"}]}',
   },
+  simplifiedDisplayString: `Blade - 1 / 3\nScorn - 1 / 2\nColleen Wing - 2 / 3\nMorbius - 2 / 0\nCorvus Glaive - 3 / 5\nGambit - 3 / 3\nLady Sif - 3 / 5\nDracula - 4 / 1\nProxima Midnight - 4 / 7\nM.O.D.O.K. - 5 / 7\nApocalypse - 6 / 8\nKhonshu - 6 / 5`,
   displayString: `# (1) Blade\n# (1) Scorn\n# (2) Colleen Wing\n# (2) Morbius\n# (3) Corvus Glaive\n# (3) Gambit\n# (3) Lady Sif\n# (4) Dracula\n# (4) Proxima Midnight\n# (5) M.O.D.O.K.\n# (6) Apocalypse\n# (6) Khonshu\n#\nQmxkNSxTY3JuNSxDbGxuV25nQixNcmJzNyxDcnZzR2x2QyxHbWJ0NixMZFNmNyxEcmNsNyxQcnhtTWRuZ2h0RixNZGs1LEFwY2xwc0EsS2huc2g3\n# Generated with SnapDeck`,
 };
 

@@ -29,6 +29,24 @@ export function generateLongDeckcodeString(cards: Card[]): string {
 }
 
 /**
+ * Generates a simplified display string of just the cards, sorted by cost then name,
+ * with each card formatted as "name - cost / power"
+ * @param cards - Array of cards to generate display string from
+ * @returns string - Newline-separated list of cards
+ */
+export function generateSimplifiedDisplayString(cards: Card[]): string {
+  const sorted = [...cards].sort((a, b) => {
+    if (Number(a.cost) === Number(b.cost)) {
+      return a.name.localeCompare(b.name);
+    } else {
+      return Number(a.cost) - Number(b.cost);
+    }
+  });
+
+  return sorted.map((card) => `${card.name} - ${card.cost} / ${card.power}`).join('\n');
+}
+
+/**
  * Generates a human-readable display string for a deck with sorted cards and deckcode
  * @param cards - Array of cards to generate display string from
  * @returns string - Formatted display string with card list and deckcode
