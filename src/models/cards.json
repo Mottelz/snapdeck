@@ -50,7 +50,7 @@
     "shortName": "AgthHrknssE"
   },
   {
-    "power": 2,
+    "power": 3,
     "cost": 1,
     "name": "Agent 13",
     "obtainable": true,
@@ -494,7 +494,7 @@
     "cost": 4,
     "name": "Doctor Octopus",
     "obtainable": true,
-    "description": "On Reveal: Pull the lowest-Power card from your opponent's hand to their side of this location.",
+    "description": "On Reveal: Pull the lowest-Power character from your opponent's hand to their side of this location.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "DoctorOctopus",
     "shortName": "DctrOctpsD"
@@ -1041,10 +1041,10 @@
   },
   {
     "power": 2,
-    "cost": 3,
+    "cost": 2,
     "name": "Luke Cage",
     "obtainable": true,
-    "description": "Ongoing: Your cards can't have their Power reduced.",
+    "description": "Ongoing: Your front-row cards can't have their Power reduced.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "LukeCage",
     "shortName": "LkCg8"
@@ -2200,11 +2200,11 @@
     "shortName": "SpdrHm9"
   },
   {
-    "power": 9,
-    "cost": 5,
+    "power": 5,
+    "cost": 4,
     "name": "Spider-Man 2099",
     "obtainable": true,
-    "description": "The first time this moves to any location, destroy an enemy card there.",
+    "description": "Moveable once.When this moves to a location, afflict an enemy card there with -3 Power.",
     "releaseDate": "2023-06-27T19:00:00Z",
     "cardDefId": "SpiderMan2099",
     "shortName": "SpdrMn2099D"
@@ -2294,7 +2294,7 @@
     "cost": 4,
     "name": "Silver Samurai",
     "obtainable": true,
-    "description": "On Reveal: Each player discards the lowest-Power card from their hand.",
+    "description": "On Reveal: Each player discards the lowest-Power character from their hand.",
     "releaseDate": "2023-08-29T19:00:00Z",
     "cardDefId": "SilverSamurai",
     "shortName": "SlvrSmrD"
@@ -2540,7 +2540,7 @@
     "shortName": "BlckSwn9"
   },
   {
-    "power": 6,
+    "power": 5,
     "cost": 4,
     "name": "Supergiant",
     "obtainable": true,
@@ -3324,7 +3324,7 @@
     "cost": 2,
     "name": "The First Ghost Rider",
     "obtainable": true,
-    "description": "On Reveal: Discard the lowest-Power card from your hand. Remove that card's Power from this.",
+    "description": "On Reveal: Discard the lowest-Power character from your hand. Remove that card's Power from this.",
     "releaseDate": "2025-03-21T19:00:00Z",
     "cardDefId": "GhostTheFirstRider",
     "shortName": "GhstThFrstRdr12"
@@ -4530,7 +4530,7 @@
     "shortName": "PlrsHrsmnF"
   },
   {
-    "power": 3,
+    "power": 4,
     "cost": 4,
     "name": "Mother Askani",
     "obtainable": true,
@@ -4610,7 +4610,7 @@
     "shortName": "Ms4"
   },
   {
-    "power": 2,
+    "power": 3,
     "cost": 2,
     "name": "Lady Bullseye",
     "obtainable": true,
@@ -4690,7 +4690,7 @@
     "shortName": "SbMrnrA"
   },
   {
-    "power": 4,
+    "power": 6,
     "cost": 3,
     "name": "Triton",
     "obtainable": true,
@@ -4710,7 +4710,7 @@
     "shortName": "Nmrt8"
   },
   {
-    "power": 3,
+    "power": 4,
     "cost": 2,
     "name": "Aunt May",
     "obtainable": true,
@@ -4830,7 +4830,7 @@
     "shortName": "PslckFrctrdFrntr19"
   },
   {
-    "power": 7,
+    "power": 8,
     "cost": 5,
     "name": "Thanos Fractured Frontier",
     "obtainable": true,
@@ -4840,7 +4840,7 @@
     "shortName": "ThnsFrctrdFrntr17"
   },
   {
-    "power": 1,
+    "power": 2,
     "cost": 2,
     "name": "Doctor Octopus Fractured Frontier",
     "obtainable": true,
@@ -4850,7 +4850,7 @@
     "shortName": "DctrOctpsFrctrdFrntr1E"
   },
   {
-    "power": 0,
+    "power": 1,
     "cost": 2,
     "name": "Red Wolf Fractured Frontier",
     "obtainable": true,
@@ -4860,7 +4860,7 @@
     "shortName": "RdWlfFrctrdFrntr18"
   },
   {
-    "power": 7,
+    "power": 8,
     "cost": 5,
     "name": "Death Fractured Frontier",
     "obtainable": true,
@@ -4875,7 +4875,7 @@
     "name": "Hellcow Fractured Frontier",
     "obtainable": true,
     "description": "!End of Turn: Afflict ALL other characters here with -{card.ReducedPower} Power. Then destroy your friendly cards here if their Power is 0 or less.",
-    "releaseDate": "2026-08-19T19:00:00Z",
+    "releaseDate": "2026-08-24T19:00:00Z",
     "cardDefId": "HellcowFracturedFrontier",
     "shortName": "HllcwFrctrdFrntr18"
   },
@@ -4890,14 +4890,134 @@
     "shortName": "RdHlkFrctrdFrntr18"
   },
   {
-    "power": 0,
-    "cost": 0,
+    "power": 9,
+    "cost": 6,
     "name": "Anti-Polar Magneto",
     "obtainable": true,
     "description": "!none",
-    "releaseDate": "2028-01-01T19:00:00Z",
+    "releaseDate": "2026-09-01T19:00:00Z",
     "cardDefId": "AntiPolarMagneto",
     "shortName": "AntPlrMgnt10"
+  },
+  {
+    "power": 4,
+    "cost": 4,
+    "name": "Red Onslaught",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2026-09-01T19:00:00Z",
+    "cardDefId": "RedOnslaught",
+    "shortName": "RdOnslghtC"
+  },
+  {
+    "power": 7,
+    "cost": 5,
+    "name": "Superior Iron Man",
+    "obtainable": true,
+    "description": "Double Cost reductions to this.Ongoing: Double Powerincreases to this.",
+    "releaseDate": "2026-09-01T19:00:00Z",
+    "cardDefId": "SuperiorIronMan",
+    "shortName": "SprrIrnMnF"
+  },
+  {
+    "power": 10,
+    "cost": 5,
+    "name": "Kluh",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2026-09-08T19:00:00Z",
+    "cardDefId": "Kluh",
+    "shortName": "Klh4"
+  },
+  {
+    "power": 5,
+    "cost": 5,
+    "name": "Rogue Scion of Division",
+    "obtainable": true,
+    "description": "On Reveal: Steal the text of the highest-Cost card in youropponent's hand.",
+    "releaseDate": "2026-09-15T19:00:00Z",
+    "cardDefId": "RogueScionOfDivision",
+    "shortName": "RgScnOfDvsn14"
+  },
+  {
+    "power": 4,
+    "cost": 3,
+    "name": "Friendly Neighborhood Carnage",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2026-09-22T19:00:00Z",
+    "cardDefId": "FriendlyNeighborhoodCarnage",
+    "shortName": "FrndlNghbrhdCrng1B"
+  },
+  {
+    "power": 4,
+    "cost": 3,
+    "name": "Scarlet Witch Queen of Chaos",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2026-09-29T19:00:00Z",
+    "cardDefId": "ScarletWitchQueenOfChaos",
+    "shortName": "ScrltWtchQnOfChs18"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Vampire Deacon Frost",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2027-06-01T19:00:00Z",
+    "cardDefId": "VampireDeaconFrost",
+    "shortName": "VmprDcnFrst12"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Vampire Enchantress",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2027-06-01T19:00:00Z",
+    "cardDefId": "VampireEnchantress",
+    "shortName": "VmprEnchntrss12"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Vampire Killmonger",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2027-06-01T19:00:00Z",
+    "cardDefId": "VampireKillmonger",
+    "shortName": "VmprKllmngr11"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Zombie Black Cat",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2027-06-01T19:00:00Z",
+    "cardDefId": "ZombieBlackCat",
+    "shortName": "ZmbBlckCtE"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Zombie Blade",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2027-06-01T19:00:00Z",
+    "cardDefId": "ZombieBlade",
+    "shortName": "ZmbBldB"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Zombie Venom",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2027-06-01T19:00:00Z",
+    "cardDefId": "ZombieVenom",
+    "shortName": "ZmbVnmB"
   },
   {
     "power": 0,
@@ -4920,8 +5040,8 @@
     "shortName": "ClstlEmpwrmnt14"
   },
   {
-    "power": 0,
-    "cost": 0,
+    "power": 3,
+    "cost": 3,
     "name": "Entropic Havok",
     "obtainable": true,
     "description": "!none",
@@ -4942,32 +5062,12 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "Friendly Neighborhood Carnage",
-    "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2028-01-01T19:00:00Z",
-    "cardDefId": "FriendlyNeighborhoodCarnage",
-    "shortName": "FrndlNghbrhdCrng1B"
-  },
-  {
-    "power": 0,
-    "cost": 0,
     "name": "Garrison Kane",
     "obtainable": true,
     "description": "!none",
     "releaseDate": "2028-01-01T19:00:00Z",
     "cardDefId": "GarrisonKane",
     "shortName": "GrrsnKnC"
-  },
-  {
-    "power": 0,
-    "cost": 0,
-    "name": "Kluh",
-    "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2028-01-01T19:00:00Z",
-    "cardDefId": "Kluh",
-    "shortName": "Klh4"
   },
   {
     "power": 0,
@@ -4982,16 +5082,6 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "Red Onslaught",
-    "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2028-01-01T19:00:00Z",
-    "cardDefId": "RedOnslaught",
-    "shortName": "RdOnslghtC"
-  },
-  {
-    "power": 0,
-    "cost": 0,
     "name": "Return to the Past",
     "obtainable": true,
     "description": "!none",
@@ -5001,43 +5091,23 @@
   },
   {
     "power": 0,
-    "cost": 0,
-    "name": "Rogue Scion of Division",
-    "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2028-01-01T19:00:00Z",
-    "cardDefId": "RogueScionOfDivision",
-    "shortName": "RgScnOfDvsn14"
-  },
-  {
-    "power": 0,
-    "cost": 0,
-    "name": "Scarlet Witch Queen of Chaos",
-    "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2028-01-01T19:00:00Z",
-    "cardDefId": "ScarletWitchQueenOfChaos",
-    "shortName": "ScrltWtchQnOfChs18"
-  },
-  {
-    "power": 0,
-    "cost": 0,
-    "name": "Superior Iron Man",
-    "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2028-01-01T19:00:00Z",
-    "cardDefId": "SuperiorIronMan",
-    "shortName": "SprrIrnMnF"
-  },
-  {
-    "power": 0,
-    "cost": 0,
+    "cost": 3,
     "name": "The Inversion",
     "obtainable": true,
-    "description": "!none",
+    "description": "On Reveal: Invert the Power of the lowest-Power card(s) here. (positive becomes negative and vice versa)",
     "releaseDate": "2028-01-01T19:00:00Z",
     "cardDefId": "TheInversion",
     "shortName": "ThInvrsnC"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Vampire America Chavez",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2028-01-01T19:00:00Z",
+    "cardDefId": "VampireAmericaChavez",
+    "shortName": "VmprAmrcChvz14"
   },
   {
     "power": 0,
@@ -5048,6 +5118,16 @@
     "releaseDate": "2028-01-01T19:00:00Z",
     "cardDefId": "YakaArrow",
     "shortName": "YkArrw9"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Zombie Nova",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2028-01-01T19:00:00Z",
+    "cardDefId": "ZombieNova",
+    "shortName": "ZmbNvA"
   },
   {
     "power": 0,
@@ -5094,7 +5174,7 @@
     "cost": 0,
     "name": "AddCopyToDeckAugment",
     "obtainable": false,
-    "description": "!OnReveal: Add a copy of me to your deck with +249684016 power.",
+    "description": "!OnReveal: Add a copy of me to your deck with +213712160 power.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "AddCopyToDeckAugment",
     "shortName": "AddCpTDckAgmnt14"
@@ -5102,9 +5182,9 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "AddPowerToDeckAugment",
+    "name": "Ally-Oop",
     "obtainable": false,
-    "description": "!OnReveal: Add this card's power to the top card of your deck",
+    "description": "!Ally-OopOn Reveal: Add this card's Power to the top character of your deck.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "AddPowerToDeckAugment",
     "shortName": "AddPwrTDckAgmnt15"
@@ -5118,6 +5198,16 @@
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "AgonyWebSlingers",
     "shortName": "AgnWbSlngrs10"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Rally",
+    "obtainable": false,
+    "description": "!RallyOngoing: +213712064 power for each of your other cards here.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "AllyPowerAugment",
+    "shortName": "AllPwrAgmnt10"
   },
   {
     "power": 8,
@@ -5144,7 +5234,7 @@
     "cost": 4,
     "name": "Apocalypse, Celestials' Chosen",
     "obtainable": false,
-    "description": "On Reveal: Swap the lowest-Power card in your front row at any location with a card from your deck.",
+    "description": "On Reveal: Swap the lowest-Power character in your front row at any location with one from your deck.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "ApocalypseCelestialsChosen",
     "shortName": "ApclpsClstlsChsn1A"
@@ -5154,7 +5244,7 @@
     "cost": 0,
     "name": "BackRowPowerAugment",
     "obtainable": false,
-    "description": "!Ongoing: +249745344 power if this is in your back row",
+    "description": "!Ongoing: +213711968 power if this is in your back row",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "BackRowPowerAugment",
     "shortName": "BckRwPwrAgmnt13"
@@ -5254,10 +5344,30 @@
     "cost": 0,
     "name": "CopyHandAugment",
     "obtainable": false,
-    "description": "!OnReveal: Add a copy of your hand. They cost 249745248 more.",
+    "description": "!OnReveal: Add a copy of your hand. They cost 213711872 more.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "CopyHandAugment",
     "shortName": "CpHndAgmntF"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Hot Pursuit",
+    "obtainable": false,
+    "description": "!Hot PursuitCosts 213711776 less if a card moved last turn.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "CostsLessIfMoveAugment",
+    "shortName": "CstsLssIfMvAgmnt16"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Crimson Behemoth",
+    "obtainable": false,
+    "description": "!none",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "CrimsonBehemoth",
+    "shortName": "CrmsnBhmthF"
   },
   {
     "power": 1,
@@ -5282,7 +5392,7 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "DestroyLowestAugment",
+    "name": "Cannibalize",
     "obtainable": false,
     "description": "!OnReveal: Destroy your lowest power card here to gain its power.",
     "releaseDate": "0001-01-01T00:00:00",
@@ -5332,9 +5442,19 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "DoubleOngoingAugment",
+    "name": "Overtime",
     "obtainable": false,
-    "description": "!Double the ongoing effects of this card",
+    "description": "!OvertimeThis card's End of Turn ability triggers an additional time.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "DoubleEndOfTurnAugment",
+    "shortName": "DblEndOfTrnAgmnt16"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Amplify",
+    "obtainable": false,
+    "description": "!AmplifyDouble the ongoing effects of this card.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "DoubleOngoingAugment",
     "shortName": "DblOngngAgmnt14"
@@ -5342,9 +5462,9 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "DoubleOnRevealAugment",
+    "name": "Encore",
     "obtainable": false,
-    "description": "!Double this card’s OnReveal",
+    "description": "!EncoreDouble this card's OnReveal",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "DoubleOnRevealAugment",
     "shortName": "DblOnRvlAgmnt15"
@@ -5512,9 +5632,9 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "EmpowerAddPowerAugment",
+    "name": "Reinforce",
     "obtainable": false,
-    "description": "!Whenever you Empower this, it gets +249745152 additional power.",
+    "description": "!ReinforceWhenever you Empower this, it gets +213711584 additional power.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "EmpowerAddPowerAugment",
     "shortName": "EmpwrAddPwrAgmnt16"
@@ -5522,9 +5642,9 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "EnergyGainAugment",
+    "name": "Overload",
     "obtainable": false,
-    "description": "!End of turn: +249745056 energy next turn if you are winning this location.",
+    "description": "!OverloadAt the start of each turn, +213711488 Energy if you are winning this location.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "EnergyGainAugment",
     "shortName": "EnrgGnAgmnt11"
@@ -5740,6 +5860,16 @@
     "shortName": "HrbChmpnE"
   },
   {
+    "power": 0,
+    "cost": 0,
+    "name": "HordeAugment",
+    "obtainable": false,
+    "description": "!Horde 213711392: When this card is revealed, increase the power of your Zombie Horde by 213711392.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "HordeAugment",
+    "shortName": "HrdAgmntC"
+  },
+  {
     "power": 11,
     "cost": 6,
     "name": "Hulk - Avengers",
@@ -5792,9 +5922,9 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "InvulnerableAugment",
+    "name": "Invulnerable",
     "obtainable": false,
-    "description": "!Invulnerable",
+    "description": "!InvulnerableCan be played anywhere. Can't be destroyed or have its Power reduced.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "InvulnerableAugment",
     "shortName": "InvlnrblAgmnt13"
@@ -5858,6 +5988,26 @@
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "LadyDeathstrikeBrotherhoodOfMutants",
     "shortName": "LdDthstrkBrthrhdOfMtnts23"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Lone Wolf",
+    "obtainable": false,
+    "description": "!Lone WolfOngoing: If this is your only card here, double its power.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "LoneWolfAugment",
+    "shortName": "LnWlfAgmntF"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Taunt",
+    "obtainable": false,
+    "description": "!TauntYour opponent must play their first card at this location next turn.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "LureAugment",
+    "shortName": "LrAgmntB"
   },
   {
     "power": 9,
@@ -5962,12 +6112,22 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "MoveableAugment",
+    "name": "Moveable",
     "obtainable": false,
-    "description": "!Moveable: 249744960",
+    "description": "!Moveable once.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "MoveableAugment",
     "shortName": "MvblAgmntF"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Afterimage",
+    "obtainable": false,
+    "description": "!AfterimageWhen this moves, create a basic copy at its previous location.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "MoveLeaveCopyAugment",
+    "shortName": "MvLvCpAgmnt14"
   },
   {
     "power": 1,
@@ -6078,6 +6238,26 @@
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "OnceAndFuture",
     "shortName": "OncAndFtrD"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Wakandan Tech",
+    "obtainable": false,
+    "description": "!Wakandan TechOn Reveal: Double this card's Power.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "OnRevealDoublePowerAugment",
+    "shortName": "OnRvlDblPwrAgmnt1A"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Reality Warp",
+    "obtainable": false,
+    "description": "!Reality WarpOn Reveal: Replace this location with a new one.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "OnRevealNewLocationAugment",
+    "shortName": "OnRvlNwLctnAgmnt1A"
   },
   {
     "power": 0,
@@ -6201,6 +6381,26 @@
   },
   {
     "power": 0,
+    "cost": 0,
+    "name": "Quickdraw Discount",
+    "obtainable": false,
+    "description": "!Quickdraw DiscountQuickdraw: -213711200 Cost.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "QuickDrawCostAugment",
+    "shortName": "QckDrwCstAgmnt14"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Quickdraw Power",
+    "obtainable": false,
+    "description": "!Quickdraw PowerQuickdraw: +213711104 Power.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "QuickDrawPowerAugment",
+    "shortName": "QckDrwPwrAgmnt15"
+  },
+  {
+    "power": 0,
     "cost": 4,
     "name": "Random",
     "obtainable": false,
@@ -6224,7 +6424,7 @@
     "cost": 0,
     "name": "Reality Shot",
     "obtainable": false,
-    "description": "!Make a copy of your other lowest Cost card here.",
+    "description": "Make a copy of your other lowest Cost card here.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "RealityShot",
     "shortName": "RltShtB"
@@ -6241,6 +6441,16 @@
   },
   {
     "power": 0,
+    "cost": 0,
+    "name": "Regeneration",
+    "obtainable": false,
+    "description": "!RegenerationWhen Discarded or Destroyed: Regenerate this with +213711008 Power at a random location.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "RegenerateAugment",
+    "shortName": "RgnrtAgmnt11"
+  },
+  {
+    "power": 0,
     "cost": 1,
     "name": "Remote Mines",
     "obtainable": false,
@@ -6252,9 +6462,19 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "ReturnToHandAugment",
+    "name": "Tag In",
     "obtainable": false,
-    "description": "!OnReveal: Return another card here to your hand and give it +249744864 power.",
+    "description": "!Tag InWhen one of your cards is destroyed, add this to that location from your hand or deck.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "ReplaceDestroyedCardAugment",
+    "shortName": "RplcDstrdCrdAgmnt1B"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Regroup",
+    "obtainable": false,
+    "description": "!RegroupOnReveal: Return another card here to your hand and give it +213710912 power.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "ReturnToHandAugment",
     "shortName": "RtrnTHndAgmnt13"
@@ -6372,9 +6592,19 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "ShuffleCopyAugment",
+    "name": "Slingshot",
     "obtainable": false,
-    "description": "!Start of game: Shuffle 249744768 additional copies into your deck",
+    "description": "!SlingshotOn Reveal: Give one of your other cards here +213710816 Power and move it to the right.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "ShiftRightAugment",
+    "shortName": "ShftRghtAgmnt11"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Clone",
+    "obtainable": false,
+    "description": "!CloneStart of game: Shuffle 213710720 additional copy into your deck.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "ShuffleCopyAugment",
     "shortName": "ShfflCpAgmnt12"
@@ -6382,9 +6612,19 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "SilenceTextAugment",
+    "name": "Sidekick",
     "obtainable": false,
-    "description": "!Silence (remove this card's text).",
+    "description": "!SidekickOnReveal: Add a random character to your hand. It costs 213710624 less.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "SidekickAugment",
+    "shortName": "SdkckAgmntF"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Silence",
+    "obtainable": false,
+    "description": "!SilenceSilence (remove this card's text).",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "SilenceTextAugment",
     "shortName": "SlncTxtAgmnt12"
@@ -6654,7 +6894,7 @@
     "cost": 0,
     "name": "Soul Shot",
     "obtainable": false,
-    "description": "!Destroy the weakest enemy card here.",
+    "description": "Destroy the weakest enemy card here.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "SoulShot",
     "shortName": "SlSht8"
@@ -6872,9 +7112,9 @@
   {
     "power": 0,
     "cost": 0,
-    "name": "StartInHandAugment",
+    "name": "Foresight",
     "obtainable": false,
-    "description": "!Starts in your opening hand",
+    "description": "!ForesightStarts in your opening hand.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "StartInHandAugment",
     "shortName": "StrtInHndAgmnt12"
@@ -7180,6 +7420,16 @@
     "shortName": "VlntnThndrblts15"
   },
   {
+    "power": 0,
+    "cost": 0,
+    "name": "Vampiric Spear",
+    "obtainable": false,
+    "description": "!none",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "VampiricSpear",
+    "shortName": "VmprcSprD"
+  },
+  {
     "power": 4,
     "cost": 1,
     "name": "Vibranium",
@@ -7248,6 +7498,16 @@
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "WidowsKiss",
     "shortName": "WdwsKssA"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Overcharge",
+    "obtainable": false,
+    "description": "!OverchargeOn Reveal: If you're winning here next turn, +213710528 Energy.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "WinForEnergyAugment",
+    "shortName": "WnFrEnrgAgmnt13"
   },
   {
     "power": 7,
