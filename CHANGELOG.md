@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.5.4](https://github.com/Mottelz/snapdeck/compare/v2.5.3...v2.5.4) (2026-08-15)
+
+
+### Bug Fixes
+
+* cards update ([2638a6c](https://github.com/Mottelz/snapdeck/commit/2638a6c18736cc72f91c70434113ac38d1edf745))
+
 ## [2.5.3](https://github.com/Mottelz/snapdeck/compare/v2.5.2...v2.5.3) (2026-07-21)
 
 ## [2.5.2](https://github.com/Mottelz/snapdeck/compare/v2.5.1...v2.5.2) (2026-07-21)
