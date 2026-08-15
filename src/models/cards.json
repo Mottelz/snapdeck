@@ -110,7 +110,7 @@
     "shortName": "AntMn6"
   },
   {
-    "power": 8,
+    "power": 9,
     "cost": 6,
     "name": "Apocalypse",
     "obtainable": true,
@@ -330,7 +330,7 @@
     "shortName": "Clk5"
   },
   {
-    "power": 3,
+    "power": 4,
     "cost": 2,
     "name": "Colleen Wing",
     "obtainable": true,
@@ -530,7 +530,7 @@
     "shortName": "Drcl7"
   },
   {
-    "power": 5,
+    "power": 6,
     "cost": 4,
     "name": "Drax",
     "obtainable": true,
@@ -690,7 +690,7 @@
     "shortName": "GrnGblnB"
   },
   {
-    "power": 4,
+    "power": 5,
     "cost": 3,
     "name": "Groot",
     "obtainable": true,
@@ -3310,7 +3310,7 @@
     "shortName": "Strbrnd9"
   },
   {
-    "power": 3,
+    "power": 4,
     "cost": 2,
     "name": "Firehair",
     "obtainable": true,
@@ -3670,7 +3670,7 @@
     "shortName": "ThThngFrstStps12"
   },
   {
-    "power": 2,
+    "power": 3,
     "cost": 1,
     "name": "Mad Thinker",
     "obtainable": true,
@@ -3700,7 +3700,7 @@
     "shortName": "InvsblWmnFrstStps18"
   },
   {
-    "power": 12,
+    "power": 11,
     "cost": 6,
     "name": "Galactus First Steps",
     "obtainable": true,
@@ -4090,7 +4090,7 @@
     "shortName": "DfnngChrdE"
   },
   {
-    "power": 9,
+    "power": 10,
     "cost": 5,
     "name": "Hydro-Man",
     "obtainable": true,
@@ -4280,7 +4280,7 @@
     "shortName": "LnL6"
   },
   {
-    "power": 12,
+    "power": 14,
     "cost": 7,
     "name": "Fin Fang Foom",
     "obtainable": true,
@@ -4330,7 +4330,7 @@
     "shortName": "StrlrdMstrOfThSn16"
   },
   {
-    "power": 4,
+    "power": 3,
     "cost": 3,
     "name": "Drax, Avatar Of Life",
     "obtainable": true,
@@ -4550,7 +4550,7 @@
     "shortName": "StrmHrsmnD"
   },
   {
-    "power": 5,
+    "power": 6,
     "cost": 4,
     "name": "Karen Page",
     "obtainable": true,
@@ -4570,7 +4570,7 @@
     "shortName": "ShdwlndsDrdvl14"
   },
   {
-    "power": 9,
+    "power": 8,
     "cost": 5,
     "name": "Wilson Fisk",
     "obtainable": true,
@@ -4740,7 +4740,7 @@
     "shortName": "SpdrMnBrndNwD14"
   },
   {
-    "power": 3,
+    "power": 4,
     "cost": 2,
     "name": "Tombstone",
     "obtainable": true,
@@ -5174,7 +5174,7 @@
     "cost": 0,
     "name": "AddCopyToDeckAugment",
     "obtainable": false,
-    "description": "!OnReveal: Add a copy of me to your deck with +213712160 power.",
+    "description": "!OnReveal: Add a copy of me to your deck with +-1938808832 power.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "AddCopyToDeckAugment",
     "shortName": "AddCpTDckAgmnt14"
@@ -5204,7 +5204,7 @@
     "cost": 0,
     "name": "Rally",
     "obtainable": false,
-    "description": "!RallyOngoing: +213712064 power for each of your other cards here.",
+    "description": "!RallyOngoing: +-1938727024 power for each of your other cards here.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "AllyPowerAugment",
     "shortName": "AllPwrAgmnt10"
@@ -5244,7 +5244,7 @@
     "cost": 0,
     "name": "BackRowPowerAugment",
     "obtainable": false,
-    "description": "!Ongoing: +213711968 power if this is in your back row",
+    "description": "!Ongoing: +-1938727120 power if this is in your back row",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "BackRowPowerAugment",
     "shortName": "BckRwPwrAgmnt13"
@@ -5344,7 +5344,7 @@
     "cost": 0,
     "name": "CopyHandAugment",
     "obtainable": false,
-    "description": "!OnReveal: Add a copy of your hand. They cost 213711872 more.",
+    "description": "!OnReveal: Add a copy of your hand. They cost -1938727216 more.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "CopyHandAugment",
     "shortName": "CpHndAgmntF"
@@ -5354,7 +5354,7 @@
     "cost": 0,
     "name": "Hot Pursuit",
     "obtainable": false,
-    "description": "!Hot PursuitCosts 213711776 less if a card moved last turn.",
+    "description": "!Hot PursuitCosts -1938727312 less if a card moved last turn.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "CostsLessIfMoveAugment",
     "shortName": "CstsLssIfMvAgmnt16"
@@ -5634,7 +5634,7 @@
     "cost": 0,
     "name": "Reinforce",
     "obtainable": false,
-    "description": "!ReinforceWhenever you Empower this, it gets +213711584 additional power.",
+    "description": "!ReinforceWhenever you Empower this, it gets +-1938727504 additional power.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "EmpowerAddPowerAugment",
     "shortName": "EmpwrAddPwrAgmnt16"
@@ -5644,7 +5644,7 @@
     "cost": 0,
     "name": "Overload",
     "obtainable": false,
-    "description": "!OverloadAt the start of each turn, +213711488 Energy if you are winning this location.",
+    "description": "!OverloadAt the start of each turn, +-1938727600 Energy if you are winning this location.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "EnergyGainAugment",
     "shortName": "EnrgGnAgmnt11"
@@ -5864,7 +5864,7 @@
     "cost": 0,
     "name": "HordeAugment",
     "obtainable": false,
-    "description": "!Horde 213711392: When this card is revealed, increase the power of your Zombie Horde by 213711392.",
+    "description": "!Horde -1938727696: When this card is revealed, increase the power of your Zombie Horde by -1938727696.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "HordeAugment",
     "shortName": "HrdAgmntC"
@@ -6330,8 +6330,8 @@
     "shortName": "PrfssrXXMnE"
   },
   {
-    "power": 3,
-    "cost": 2,
+    "power": 0,
+    "cost": 0,
     "name": "H.E.R.B.I.E.",
     "obtainable": false,
     "description": "Activate: Next turn, you get +2 Energy.",
@@ -6340,8 +6340,8 @@
     "shortName": "Prgrm01HrbF"
   },
   {
-    "power": 3,
-    "cost": 2,
+    "power": 0,
+    "cost": 0,
     "name": "H.E.R.B.I.E.",
     "obtainable": false,
     "description": "Activate: Give {card.ModifiedCardCount} of your cards at each other location +1 Power.",
@@ -6350,8 +6350,8 @@
     "shortName": "Prgrm02HrbF"
   },
   {
-    "power": 3,
-    "cost": 2,
+    "power": 0,
+    "cost": 0,
     "name": "H.E.R.B.I.E.",
     "obtainable": false,
     "description": "Activate: Create a {card.Card_Token.Name} here. Set its Power to 4.",
@@ -6360,8 +6360,8 @@
     "shortName": "Prgrm03HrbF"
   },
   {
-    "power": 3,
-    "cost": 2,
+    "power": 0,
+    "cost": 0,
     "name": "H.E.R.B.I.E.",
     "obtainable": false,
     "description": "Activate: Double thiscard's Power.",
@@ -6384,7 +6384,7 @@
     "cost": 0,
     "name": "Quickdraw Discount",
     "obtainable": false,
-    "description": "!Quickdraw DiscountQuickdraw: -213711200 Cost.",
+    "description": "!Quickdraw DiscountQuickdraw: --1938727888 Cost.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "QuickDrawCostAugment",
     "shortName": "QckDrwCstAgmnt14"
@@ -6394,7 +6394,7 @@
     "cost": 0,
     "name": "Quickdraw Power",
     "obtainable": false,
-    "description": "!Quickdraw PowerQuickdraw: +213711104 Power.",
+    "description": "!Quickdraw PowerQuickdraw: +-1938727984 Power.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "QuickDrawPowerAugment",
     "shortName": "QckDrwPwrAgmnt15"
@@ -6444,7 +6444,7 @@
     "cost": 0,
     "name": "Regeneration",
     "obtainable": false,
-    "description": "!RegenerationWhen Discarded or Destroyed: Regenerate this with +213711008 Power at a random location.",
+    "description": "!RegenerationWhen Discarded or Destroyed: Regenerate this with +-1938728080 Power at a random location.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "RegenerateAugment",
     "shortName": "RgnrtAgmnt11"
@@ -6474,7 +6474,7 @@
     "cost": 0,
     "name": "Regroup",
     "obtainable": false,
-    "description": "!RegroupOnReveal: Return another card here to your hand and give it +213710912 power.",
+    "description": "!RegroupOnReveal: Return another card here to your hand and give it +-1938728176 power.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "ReturnToHandAugment",
     "shortName": "RtrnTHndAgmnt13"
@@ -6594,7 +6594,7 @@
     "cost": 0,
     "name": "Slingshot",
     "obtainable": false,
-    "description": "!SlingshotOn Reveal: Give one of your other cards here +213710816 Power and move it to the right.",
+    "description": "!SlingshotOn Reveal: Give one of your other cards here +-1938728272 Power and move it to the right.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "ShiftRightAugment",
     "shortName": "ShftRghtAgmnt11"
@@ -6604,7 +6604,7 @@
     "cost": 0,
     "name": "Clone",
     "obtainable": false,
-    "description": "!CloneStart of game: Shuffle 213710720 additional copy into your deck.",
+    "description": "!CloneStart of game: Shuffle -1938728416 additional copy into your deck.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "ShuffleCopyAugment",
     "shortName": "ShfflCpAgmnt12"
@@ -6614,7 +6614,7 @@
     "cost": 0,
     "name": "Sidekick",
     "obtainable": false,
-    "description": "!SidekickOnReveal: Add a random character to your hand. It costs 213710624 less.",
+    "description": "!SidekickOnReveal: Add a random character to your hand. It costs -1938728512 less.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "SidekickAugment",
     "shortName": "SdkckAgmntF"
@@ -6950,8 +6950,8 @@
     "shortName": "Spll01AgmttF"
   },
   {
-    "power": 2,
-    "cost": 1,
+    "power": 0,
+    "cost": 0,
     "name": "Nico Minoru",
     "obtainable": false,
     "description": "On Reveal: After you play your next card, it becomes a {card.Card_Token.Name}.",
@@ -6970,8 +6970,8 @@
     "shortName": "Spll02AgmttF"
   },
   {
-    "power": 2,
-    "cost": 1,
+    "power": 0,
+    "cost": 0,
     "name": "Nico Minoru",
     "obtainable": false,
     "description": "On Reveal: After you play your next card, destroy it to draw two cards.",
@@ -6990,8 +6990,8 @@
     "shortName": "Spll03AgmttF"
   },
   {
-    "power": 2,
-    "cost": 1,
+    "power": 0,
+    "cost": 0,
     "name": "Nico Minoru",
     "obtainable": false,
     "description": "On Reveal: After you play your next card, move it one location to the right.",
@@ -7010,8 +7010,8 @@
     "shortName": "Spll04AgmttF"
   },
   {
-    "power": 2,
-    "cost": 1,
+    "power": 0,
+    "cost": 0,
     "name": "Nico Minoru",
     "obtainable": false,
     "description": "On Reveal: After you play your next card, give it +2 Power.",
@@ -7030,8 +7030,8 @@
     "shortName": "Spll05AgmttF"
   },
   {
-    "power": 2,
-    "cost": 1,
+    "power": 0,
+    "cost": 0,
     "name": "Nico Minoru",
     "obtainable": false,
     "description": "On Reveal: After you play your next card, replace that card's location.",
@@ -7050,8 +7050,8 @@
     "shortName": "Spll06AgmttF"
   },
   {
-    "power": 2,
-    "cost": 1,
+    "power": 0,
+    "cost": 0,
     "name": "Nico Minoru",
     "obtainable": false,
     "description": "On Reveal: After you play your next card, add a copy of it to your hand.",
@@ -7060,8 +7060,8 @@
     "shortName": "Spll06NcMnr11"
   },
   {
-    "power": 2,
-    "cost": 1,
+    "power": 0,
+    "cost": 0,
     "name": "Nico Minoru",
     "obtainable": false,
     "description": "On Reveal: After you play your next card, double this card's Power.",
@@ -7211,7 +7211,7 @@
   },
   {
     "power": 0,
-    "cost": 2,
+    "cost": 0,
     "name": "Techno-Organic Virus Infection",
     "obtainable": false,
     "description": "Ongoing: +1 Power for each {card.Card_Source.Name} you've played. (+{card.ModifiedCardCount})",
@@ -7504,7 +7504,7 @@
     "cost": 0,
     "name": "Overcharge",
     "obtainable": false,
-    "description": "!OverchargeOn Reveal: If you're winning here next turn, +213710528 Energy.",
+    "description": "!OverchargeOn Reveal: If you're winning here next turn, +-1938728608 Energy.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "WinForEnergyAugment",
     "shortName": "WnFrEnrgAgmnt13"

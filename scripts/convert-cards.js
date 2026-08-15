@@ -4,7 +4,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const inputPath = path.resolve(__dirname, "../", process.argv[2] ?? "20260721Cards.json");
+const inputPath = path.resolve(__dirname, "../", process.argv[2] ?? "cards20260815.json");
 const outputPath = path.resolve(__dirname, "../src/models/cards.json");
 
 const cards = JSON.parse(fs.readFileSync(inputPath, "utf8"));
