@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.8.0](https://github.com/Mottelz/snapdeck/compare/v2.7.1...v2.8.0) (2026-11-07)
+
+
+### Features
+
+* card library update ([5f81895](https://github.com/Mottelz/snapdeck/commit/5f818951705900c92c02fc7a1e39080e7e807c57))
+
 ## [2.7.1](https://github.com/Mottelz/snapdeck/compare/v2.7.0...v2.7.1) (2026-10-06)
 
 ## [2.7.0](https://github.com/Mottelz/snapdeck/compare/v2.6.0...v2.7.0) (2026-10-06)
