@@ -4,7 +4,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const inputPath = path.resolve(__dirname, "../", process.argv[2] ?? "cards20261006.json");
+const inputPath = path.resolve(__dirname, "../", process.argv[2] ?? "cards20261106.json");
 const outputPath = path.resolve(__dirname, "../src/models/cards.json");
 
 const cards = JSON.parse(fs.readFileSync(inputPath, "utf8"));
@@ -23,16 +23,28 @@ const corruption = (desc) => (/\d{6,}/.test(desc) ? 2 : /\{card\./.test(desc) ? 
 // If only whitespace differs, the previous description is the hand-fixed one.
 const squash = (desc) => desc.replace(/\s/g, "");
 
+// Unreleased cards ship as "!none" until their text exists; never prefer that.
+const isPlaceholder = (desc) => /^!?none$/i.test(desc.trim());
+
+// Last resort when no clean text exists: render the raw template ourselves,
+// stripping markup, keeping line breaks as spaces, and marking unknown values X.
+const renderRaw = (raw) =>
+  raw
+    .replace(/<[^>]+>/g, "")
+    .replace(/\{card\.[^}]+\}/g, "X")
+    .replace(/\s+/g, " ")
+    .trim();
+
 const previous = {};
 if (fs.existsSync(outputPath)) {
   for (const card of JSON.parse(fs.readFileSync(outputPath, "utf8"))) {
-    previous[card.cardDefId] = card.description;
+    if (!isPlaceholder(card.description)) previous[card.cardDefId] = card.description;
   }
 }
 
 let recovered = 0;
 let respaced = 0;
-let stillCorrupted = 0;
+let rendered = 0;
 
 const converted = cards.map((card) => {
   let description = card.descriptionFormatted;
@@ -44,7 +56,10 @@ const converted = cards.map((card) => {
     description = old;
     respaced++;
   }
-  if (corruption(description) > 0) stillCorrupted++;
+  if (corruption(description) > 0) {
+    description = renderRaw(card.description);
+    rendered++;
+  }
   return {
     power: card.power,
     cost: card.cost,
@@ -61,4 +76,4 @@ fs.writeFileSync(outputPath, JSON.stringify(converted, null, 2));
 console.log(`Written ${converted.length} cards to ${outputPath}`);
 if (recovered) console.log(`Recovered ${recovered} corrupted descriptions from previous cards.json`);
 if (respaced) console.log(`Kept ${respaced} previous descriptions that differed only in whitespace`);
-if (stillCorrupted) console.log(`WARNING: ${stillCorrupted} cards still have corrupted descriptions (no clean previous version)`);
+if (rendered) console.log(`WARNING: ${rendered} cards had no clean description; rendered from raw template with unknown values as X`);

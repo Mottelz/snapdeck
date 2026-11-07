@@ -110,7 +110,7 @@
     "shortName": "AntMn6"
   },
   {
-    "power": 9,
+    "power": 10,
     "cost": 6,
     "name": "Apocalypse",
     "obtainable": true,
@@ -330,7 +330,7 @@
     "shortName": "Clk5"
   },
   {
-    "power": 4,
+    "power": 5,
     "cost": 2,
     "name": "Colleen Wing",
     "obtainable": true,
@@ -520,7 +520,7 @@
     "shortName": "Dmn6"
   },
   {
-    "power": 1,
+    "power": 2,
     "cost": 4,
     "name": "Dracula",
     "obtainable": true,
@@ -750,8 +750,8 @@
     "shortName": "HlcrrrB"
   },
   {
-    "power": 7,
-    "cost": 4,
+    "power": 5,
+    "cost": 3,
     "name": "Hellcow",
     "obtainable": true,
     "description": "Activate: Discard a card from your hand.",
@@ -950,7 +950,7 @@
     "shortName": "Kngpn7"
   },
   {
-    "power": 2,
+    "power": 3,
     "cost": 4,
     "name": "Klaw",
     "obtainable": true,
@@ -1010,7 +1010,7 @@
     "shortName": "Ldr6"
   },
   {
-    "power": 4,
+    "power": 5,
     "cost": 4,
     "name": "Leech",
     "obtainable": true,
@@ -1761,7 +1761,7 @@
   },
   {
     "power": 3,
-    "cost": 2,
+    "cost": 1,
     "name": "Swarm",
     "obtainable": true,
     "description": "When Discarded: Add two copies of this that cost 0 to your hand.",
@@ -3320,7 +3320,7 @@
     "shortName": "Frhr8"
   },
   {
-    "power": 7,
+    "power": 8,
     "cost": 2,
     "name": "The First Ghost Rider",
     "obtainable": true,
@@ -4080,16 +4080,6 @@
     "shortName": "SpdrMnNrD"
   },
   {
-    "power": 0,
-    "cost": 1,
-    "name": "Deafening Chord",
-    "obtainable": true,
-    "description": "On Reveal: Remove the text of a 3-Cost or lower enemy character here.",
-    "releaseDate": "2025-11-20T19:00:00Z",
-    "cardDefId": "DeafeningChord",
-    "shortName": "DfnngChrdE"
-  },
-  {
     "power": 10,
     "cost": 5,
     "name": "Hydro-Man",
@@ -4100,6 +4090,16 @@
     "shortName": "HdrMn8"
   },
   {
+    "power": 0,
+    "cost": 1,
+    "name": "Deafening Chord",
+    "obtainable": true,
+    "description": "On Reveal: Remove the text of a 3-Cost or lower enemy character here.",
+    "releaseDate": "2025-11-20T19:00:00Z",
+    "cardDefId": "DeafeningChord",
+    "shortName": "DfnngChrdE"
+  },
+  {
     "power": 4,
     "cost": 3,
     "name": "Prowler",
@@ -4108,16 +4108,6 @@
     "releaseDate": "2025-11-25T19:00:00Z",
     "cardDefId": "Prowler",
     "shortName": "Prwlr7"
-  },
-  {
-    "power": 0,
-    "cost": 4,
-    "name": "Adamantium Infusion",
-    "obtainable": true,
-    "description": "On Reveal: Banish this to revive your highest-Power destroyed card here with its Power doubled.",
-    "releaseDate": "2025-12-02T19:00:00Z",
-    "cardDefId": "AdamantiumInfusion",
-    "shortName": "AdmntmInfsn12"
   },
   {
     "power": 1,
@@ -4150,6 +4140,16 @@
     "shortName": "WpnXWlvrn10"
   },
   {
+    "power": 0,
+    "cost": 4,
+    "name": "Adamantium Infusion",
+    "obtainable": true,
+    "description": "On Reveal: Banish this to revive your highest-Power destroyed card here with its Power doubled.",
+    "releaseDate": "2025-12-02T19:00:00Z",
+    "cardDefId": "AdamantiumInfusion",
+    "shortName": "AdmntmInfsn12"
+  },
+  {
     "power": 14,
     "cost": 7,
     "name": "Weapon H",
@@ -4170,16 +4170,6 @@
     "shortName": "Mvrck8"
   },
   {
-    "power": 0,
-    "cost": 2,
-    "name": "Fastball Special",
-    "obtainable": true,
-    "description": "On Reveal: Destroy your highest-Power card here to afflict an enemy card here with that much negative Power.",
-    "releaseDate": "2025-12-18T19:00:00Z",
-    "cardDefId": "FastballSpecial",
-    "shortName": "FstbllSpclF"
-  },
-  {
     "power": 3,
     "cost": 2,
     "name": "Marrow",
@@ -4198,6 +4188,16 @@
     "releaseDate": "2025-12-18T19:00:00Z",
     "cardDefId": "WildChild",
     "shortName": "WldChld9"
+  },
+  {
+    "power": 0,
+    "cost": 2,
+    "name": "Fastball Special",
+    "obtainable": true,
+    "description": "On Reveal: Destroy your highest-Power card here to afflict an enemy card here with that much negative Power.",
+    "releaseDate": "2025-12-18T19:00:00Z",
+    "cardDefId": "FastballSpecial",
+    "shortName": "FstbllSpclF"
   },
   {
     "power": 5,
@@ -4240,16 +4240,6 @@
     "shortName": "Lckhd8"
   },
   {
-    "power": 0,
-    "cost": 1,
-    "name": "Majestic Wingbeat",
-    "obtainable": true,
-    "description": "On Reveal: Give the leftmost card in your hand +3 Power. If it’s 5-Cost or more, -1 Cost too.",
-    "releaseDate": "2026-01-06T19:00:00Z",
-    "cardDefId": "MajesticWingbeat",
-    "shortName": "MjstcWngbt10"
-  },
-  {
     "power": 8,
     "cost": 5,
     "name": "Shou-Lao the Undying",
@@ -4258,6 +4248,16 @@
     "releaseDate": "2026-01-06T19:00:00Z",
     "cardDefId": "ShouLao",
     "shortName": "ShL7"
+  },
+  {
+    "power": 0,
+    "cost": 1,
+    "name": "Majestic Wingbeat",
+    "obtainable": true,
+    "description": "On Reveal: Give the leftmost card in your hand +3 Power. If it’s 5-Cost or more, -1 Cost too.",
+    "releaseDate": "2026-01-06T19:00:00Z",
+    "cardDefId": "MajesticWingbeat",
+    "shortName": "MjstcWngbt10"
   },
   {
     "power": 5,
@@ -4380,7 +4380,7 @@
     "shortName": "Strhwk8"
   },
   {
-    "power": 6,
+    "power": 5,
     "cost": 4,
     "name": "En Sabah Nur",
     "obtainable": true,
@@ -4480,6 +4480,16 @@
     "shortName": "Strf6"
   },
   {
+    "power": 4,
+    "cost": 4,
+    "name": "Wolverine Horseman of War",
+    "obtainable": true,
+    "description": " Objective: This has 5 or more Power  Give one of your cards at each location +4 Power. (3/5)",
+    "releaseDate": "2026-04-07T19:00:00Z",
+    "cardDefId": "WolverineHorseman",
+    "shortName": "WlvrnHrsmn11"
+  },
+  {
     "power": 0,
     "cost": 2,
     "name": "Techno-Organic Virus",
@@ -4488,16 +4498,6 @@
     "releaseDate": "2026-04-07T19:00:00Z",
     "cardDefId": "TechnoOrganicVirus",
     "shortName": "TchnOrgncVrs12"
-  },
-  {
-    "power": 3,
-    "cost": 4,
-    "name": "Wolverine Horseman of War",
-    "obtainable": true,
-    "description": " Objective: This has 5 or more Power  Give one of your cards at each location +4 Power. (3/5)",
-    "releaseDate": "2026-04-07T19:00:00Z",
-    "cardDefId": "WolverineHorseman",
-    "shortName": "WlvrnHrsmn11"
   },
   {
     "power": 3,
@@ -4550,7 +4550,7 @@
     "shortName": "StrmHrsmnD"
   },
   {
-    "power": 6,
+    "power": 5,
     "cost": 4,
     "name": "Karen Page",
     "obtainable": true,
@@ -4830,7 +4830,7 @@
     "shortName": "PslckFrctrdFrntr19"
   },
   {
-    "power": 8,
+    "power": 7,
     "cost": 5,
     "name": "Thanos Fractured Frontier",
     "obtainable": true,
@@ -4890,7 +4890,7 @@
     "shortName": "RdHlkFrctrdFrntr18"
   },
   {
-    "power": 9,
+    "power": 8,
     "cost": 6,
     "name": "Anti-Polar Magneto",
     "obtainable": true,
@@ -4940,7 +4940,7 @@
     "shortName": "RgScnOfDvsn14"
   },
   {
-    "power": 3,
+    "power": 4,
     "cost": 3,
     "name": "Entropic Havok",
     "obtainable": true,
@@ -4970,7 +4970,7 @@
     "shortName": "ThInvrsnC"
   },
   {
-    "power": 4,
+    "power": 3,
     "cost": 3,
     "name": "Scarlet Witch Queen of Chaos",
     "obtainable": true,
@@ -5125,7 +5125,7 @@
     "name": "Knight's Vow",
     "obtainable": true,
     "description": "On Reveal: Give a 4-Cost or more character in your hand -1 Cost and a 3-Cost or less one +3 Power.",
-    "releaseDate": "2026-11-17T19:00:00Z",
+    "releaseDate": "2026-11-19T19:00:00Z",
     "cardDefId": "KnightsVow",
     "shortName": "KnghtsVwA"
   },
@@ -5140,104 +5140,154 @@
     "shortName": "SrPrcBlckKnght13"
   },
   {
-    "power": 0,
-    "cost": 0,
-    "name": "Cyclops Doomsday",
-    "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2027-08-01T19:00:00Z",
-    "cardDefId": "CyclopsDoomsday",
-    "shortName": "CclpsDmsdF"
-  },
-  {
-    "power": 0,
-    "cost": 0,
-    "name": "Doom Witch",
-    "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2027-08-01T19:00:00Z",
-    "cardDefId": "DoomWitch",
-    "shortName": "DmWtch9"
-  },
-  {
-    "power": 0,
-    "cost": 0,
+    "power": 6,
+    "cost": 6,
     "name": "Doctor Doom Doomsday",
     "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2027-08-01T19:00:00Z",
+    "description": "On Reveal: Copy the text of the highest-Cost ally with an On Reveal, then repeat for Ongoing.",
+    "releaseDate": "2026-12-01T19:00:00Z",
     "cardDefId": "DrDoomDoomsday",
     "shortName": "DrDmDmsdE"
   },
   {
-    "power": 0,
-    "cost": 0,
+    "power": 3,
+    "cost": 3,
     "name": "Gambit & Shang-Chi Doomsday",
     "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2027-08-01T19:00:00Z",
+    "description": "!Frontline | On Reveal: Randomly split -X Cost among cards in your deck. Backline | On Reveal: Gain Power to match the card in front of this.",
+    "releaseDate": "2026-12-01T19:00:00Z",
     "cardDefId": "GambitAndShangChi",
     "shortName": "GmbtAndShngCh11"
   },
   {
-    "power": 0,
-    "cost": 0,
-    "name": "Incursion Event",
-    "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2027-08-01T19:00:00Z",
-    "cardDefId": "IncursionEvent",
-    "shortName": "IncrsnEvntE"
-  },
-  {
-    "power": 0,
-    "cost": 0,
+    "power": 4,
+    "cost": 3,
     "name": "Invisible Woman & Namor Doomsday",
     "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2027-08-01T19:00:00Z",
+    "description": "Frontline | Ongoing: Your opponent can only play X cards per turn. Backline | Ongoing: +X Power for each location where you have the highest-Cost card.",
+    "releaseDate": "2026-12-01T19:00:00Z",
     "cardDefId": "InvisibleWomanAndNamor",
     "shortName": "InvsblWmnAndNmr16"
   },
   {
-    "power": 0,
-    "cost": 0,
-    "name": "John Walker Doomsday",
+    "power": 1,
+    "cost": 4,
+    "name": "Doom Witch",
     "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2027-08-01T19:00:00Z",
-    "cardDefId": "JohnWalkerDoomsday",
-    "shortName": "JhnWlkrDmsd12"
+    "description": "Ongoing: Your opponent has -X Power at each other location.",
+    "releaseDate": "2026-12-08T19:00:00Z",
+    "cardDefId": "DoomWitch",
+    "shortName": "DmWtch9"
   },
   {
-    "power": 0,
-    "cost": 0,
-    "name": "Mister Fantastic & Beast Doomsday",
+    "power": 2,
+    "cost": 2,
+    "name": "Yelena Belova Doomsday",
     "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2027-08-01T19:00:00Z",
-    "cardDefId": "MrFantasticAndBeast",
-    "shortName": "MrFntstcAndBst13"
+    "description": "End of Turn: If you played (exactly) X cards, give them +X Power.",
+    "releaseDate": "2026-12-08T19:00:00Z",
+    "cardDefId": "YelenaBelovaDoomsday",
+    "shortName": "YlnBlvDmsd14"
   },
   {
-    "power": 0,
-    "cost": 0,
+    "power": 4,
+    "cost": 3,
     "name": "Professor X Doomsday",
     "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2027-08-01T19:00:00Z",
+    "description": "Start of Turn: Give +X Power to each character in your hand with less Power than this.",
+    "releaseDate": "2026-12-15T19:00:00Z",
     "cardDefId": "ProfessorXDoomsday",
     "shortName": "PrfssrXDmsd12"
   },
   {
-    "power": 0,
-    "cost": 0,
-    "name": "Yelena Belova Doomsday",
+    "power": 4,
+    "cost": 3,
+    "name": "John Walker Doomsday",
     "obtainable": true,
-    "description": "!none",
-    "releaseDate": "2027-08-01T19:00:00Z",
-    "cardDefId": "YelenaBelovaDoomsday",
-    "shortName": "YlnBlvDmsd14"
+    "description": "Ongoing: Cards can't be added to hands. (except from decks)",
+    "releaseDate": "2026-12-17T19:00:00Z",
+    "cardDefId": "JohnWalkerDoomsday",
+    "shortName": "JhnWlkrDmsd12"
+  },
+  {
+    "power": 3,
+    "cost": 2,
+    "name": "Mister Fantastic & Beast Doomsday",
+    "obtainable": true,
+    "description": "Frontline | On Reveal: Add a character to your hand with +X Power. Backline | Ongoing: This has +X Power for each allied created card.",
+    "releaseDate": "2026-12-22T19:00:00Z",
+    "cardDefId": "MrFantasticAndBeast",
+    "shortName": "MrFntstcAndBst13"
+  },
+  {
+    "power": 2,
+    "cost": 2,
+    "name": "Cyclops Doomsday",
+    "obtainable": true,
+    "description": "Start of Turn: If you have X or more Energy, add an X to hand.",
+    "releaseDate": "2026-12-29T19:00:00Z",
+    "cardDefId": "CyclopsDoomsday",
+    "shortName": "CclpsDmsdF"
+  },
+  {
+    "power": 2,
+    "cost": 2,
+    "name": "Bucky Barnes Doomsday",
+    "obtainable": true,
+    "description": "!On Reveal: Give X cards in your hand +X Power. If you're winning here after next turn, give cards in your hand +X Power.",
+    "releaseDate": "2027-01-05T19:00:00Z",
+    "cardDefId": "BuckyBarnesDoomsday",
+    "shortName": "BckBrnsDmsd13"
+  },
+  {
+    "power": 1,
+    "cost": 2,
+    "name": "Steve Rogers Doomsday",
+    "obtainable": true,
+    "description": "!On Reveal: Add X here. Start of Turn: Return it to your hand.",
+    "releaseDate": "2027-01-05T19:00:00Z",
+    "cardDefId": "SteveRogersDoomsday",
+    "shortName": "StvRgrsDmsd13"
+  },
+  {
+    "power": 5,
+    "cost": 3,
+    "name": "Thor Doomsday",
+    "obtainable": true,
+    "description": "!On Reveal: Shuffle X into your deck. Objective: Your cards in play have at least X increased Power Add the lowest-Cost card from your deck to here. (X/X)",
+    "releaseDate": "2027-01-05T19:00:00Z",
+    "cardDefId": "ThorDoomsday",
+    "shortName": "ThrDmsdC"
+  },
+  {
+    "power": 2,
+    "cost": 4,
+    "name": "M'Baku & The Thing Doomsday",
+    "obtainable": true,
+    "description": "!Frontline | On Reveal: Add a X to each other location. Backline | On Reveal: +X Power for each of your backline cards in play.",
+    "releaseDate": "2027-01-12T19:00:00Z",
+    "cardDefId": "MBakuAndTheThingDoomsday",
+    "shortName": "MBkAndThThngDmsd18"
+  },
+  {
+    "power": 4,
+    "cost": 3,
+    "name": "Sam Wilson & Nightcrawler Doomsday",
+    "obtainable": true,
+    "description": "!Frontline | Moveable Backline | End of Turn: Give the card in front of this +X Power and move it away.",
+    "releaseDate": "2027-01-19T19:00:00Z",
+    "cardDefId": "SamWilsonAndNightcrawlerDoomsday",
+    "shortName": "SmWlsnAndNghtcrwlrDmsd20"
+  },
+  {
+    "power": 5,
+    "cost": 7,
+    "name": "Black Panther Doomsday",
+    "obtainable": true,
+    "description": "!On Reveal: Triple this card's Power.",
+    "releaseDate": "2027-01-26T19:00:00Z",
+    "cardDefId": "BlackPantherDoomsday",
+    "shortName": "BlckPnthrDmsd14"
   },
   {
     "power": 0,
@@ -5250,14 +5300,14 @@
     "shortName": "Bg3"
   },
   {
-    "power": 0,
-    "cost": 0,
-    "name": "Celestial Empowerment",
+    "power": 1,
+    "cost": 1,
+    "name": "Ant Man Doomsday",
     "obtainable": true,
-    "description": "!none",
+    "description": "Each turn this is in hand, randomize this card's stats from X-X Cost and X-X Power.",
     "releaseDate": "2028-01-01T19:00:00Z",
-    "cardDefId": "CelestialEmpowerment",
-    "shortName": "ClstlEmpwrmnt14"
+    "cardDefId": "AntManDoomsday",
+    "shortName": "AntMnDmsdE"
   },
   {
     "power": 0,
@@ -5280,6 +5330,16 @@
     "shortName": "GrrsnKnC"
   },
   {
+    "power": 4,
+    "cost": 2,
+    "name": "Ghost Doomsday",
+    "obtainable": true,
+    "description": "!On Reveal: If this is in the back row, return the card in front of this to your hand. Give it -X Cost next turn.",
+    "releaseDate": "2028-01-01T19:00:00Z",
+    "cardDefId": "GhostDoomsday",
+    "shortName": "GhstDmsdD"
+  },
+  {
     "power": 0,
     "cost": 0,
     "name": "Living Monolith",
@@ -5288,6 +5348,26 @@
     "releaseDate": "2028-01-01T19:00:00Z",
     "cardDefId": "LivingMonolith",
     "shortName": "LvngMnlthE"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "Celestial Empowerment",
+    "obtainable": true,
+    "description": "!none",
+    "releaseDate": "2028-01-01T19:00:00Z",
+    "cardDefId": "CelestialEmpowerment",
+    "shortName": "ClstlEmpwrmnt14"
+  },
+  {
+    "power": 0,
+    "cost": 2,
+    "name": "Incursion Event",
+    "obtainable": true,
+    "description": "On Reveal: Replace this location with a new one. Next turn, all cards here are Moveable.",
+    "releaseDate": "2028-01-01T19:00:00Z",
+    "cardDefId": "IncursionEvent",
+    "shortName": "IncrsnEvntE"
   },
   {
     "power": 0,
@@ -5310,6 +5390,16 @@
     "shortName": "YkArrw9"
   },
   {
+    "power": 6,
+    "cost": 4,
+    "name": "Dragon Man",
+    "obtainable": true,
+    "description": "End of Turn: +1 Power for each location that's full on your side.",
+    "releaseDate": "2028-01-04T19:00:00Z",
+    "cardDefId": "DragonMan",
+    "shortName": "DrgnMn9"
+  },
+  {
     "power": 0,
     "cost": 1,
     "name": "Brand of Shou-Lao",
@@ -5330,16 +5420,6 @@
     "shortName": "DrgnBrthC"
   },
   {
-    "power": 6,
-    "cost": 4,
-    "name": "Dragon Man",
-    "obtainable": true,
-    "description": "End of Turn: +1 Power for each location that's full on your side.",
-    "releaseDate": "2028-01-04T19:00:00Z",
-    "cardDefId": "DragonMan",
-    "shortName": "DrgnMn9"
-  },
-  {
     "power": -2,
     "cost": 1,
     "name": "Acid Arrow",
@@ -5358,6 +5438,26 @@
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "AddCopyToDeckAugment",
     "shortName": "AddCpTDckAgmnt14"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "AddPowerOngoingTrinket",
+    "obtainable": false,
+    "description": "!Ongoing: Your even-cost cards get +X Power.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "AddPowerOngoingTrinket",
+    "shortName": "AddPwrOngngTrnkt16"
+  },
+  {
+    "power": 0,
+    "cost": 0,
+    "name": "AddPowerOnRevealTrinket",
+    "obtainable": false,
+    "description": "!The first card you play each turn gets +X Power.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "AddPowerOnRevealTrinket",
+    "shortName": "AddPwrOnRvlTrnkt17"
   },
   {
     "power": 0,
@@ -5410,7 +5510,7 @@
     "shortName": "AntVnmWbSlngrs14"
   },
   {
-    "power": 9,
+    "power": 8,
     "cost": 4,
     "name": "Apocalypse, Celestials' Chosen",
     "obtainable": false,
@@ -5620,11 +5720,11 @@
     "shortName": "DmBt2099B"
   },
   {
-    "power": 0,
-    "cost": 0,
+    "power": 2,
+    "cost": 2,
     "name": "Doom Guard",
     "obtainable": false,
-    "description": "!none",
+    "description": "!Start of Turn: +X Energy.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "DoomGuard",
     "shortName": "DmGrd9"
@@ -5911,7 +6011,7 @@
   },
   {
     "power": 1,
-    "cost": 0,
+    "cost": 1,
     "name": "Excalibur",
     "obtainable": false,
     "description": "Ongoing: Your 4-Cost or more cards have +2 Power.",
@@ -6290,6 +6390,16 @@
     "shortName": "MjlnrAvngrsF"
   },
   {
+    "power": 0,
+    "cost": 1,
+    "name": "Mjolnir Doomsday",
+    "obtainable": false,
+    "description": "!On Reveal: Give your highest-Power card here +X Power.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "MjolnirDoomsday",
+    "shortName": "MjlnrDmsdF"
+  },
+  {
     "power": 4,
     "cost": 3,
     "name": "Mole Man Champion",
@@ -6461,10 +6571,10 @@
   },
   {
     "power": 0,
-    "cost": 0,
+    "cost": 3,
     "name": "Optic Blast",
     "obtainable": false,
-    "description": "!none",
+    "description": "On Reveal: Afflict an enemy here with -X Power.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "OpticBlast",
     "shortName": "OptcBlstA"
@@ -7340,6 +7450,16 @@
     "shortName": "StrmbrkrC"
   },
   {
+    "power": 1,
+    "cost": 0,
+    "name": "Stormbreaker Doomsday",
+    "obtainable": false,
+    "description": "!On Reveal: Double X's Power.",
+    "releaseDate": "0001-01-01T00:00:00",
+    "cardDefId": "StormbreakerDoomsday",
+    "shortName": "StrmbrkrDmsd14"
+  },
+  {
     "power": 0,
     "cost": 0,
     "name": "Summoning Ritual 1",
@@ -7471,7 +7591,7 @@
   },
   {
     "power": 0,
-    "cost": 7,
+    "cost": 6,
     "name": "The Grand Design",
     "obtainable": false,
     "description": "Costs 1 less per created card played. On Reveal: Give a 3-Cost or less card and 4-Cost or more card +5 Power each.",
@@ -7644,7 +7764,7 @@
     "cost": 1,
     "name": "Vampiric Spear",
     "obtainable": false,
-    "description": "!none",
+    "description": "On Reveal: X steals X Power from a character in your opponent's hand.",
     "releaseDate": "0001-01-01T00:00:00",
     "cardDefId": "VampiricSpear",
     "shortName": "VmprcSprD"
